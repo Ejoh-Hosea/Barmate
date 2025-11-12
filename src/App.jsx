@@ -5,7 +5,7 @@ import Cocktail from "./pages/Cocktail";
 import Newsletter from "./pages/Newsletter";
 import About from "./pages/About";
 import Error from "./pages/Error";
-
+import { loader as landingLoader } from "./pages/Landing";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +15,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        loader: landingLoader,
       },
       {
         path: "cocktail",
