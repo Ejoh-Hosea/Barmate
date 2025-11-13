@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import CocktailCard from "./CocktailCard";
 
 const CocktailList = ({ drinks }) => {
@@ -16,11 +17,16 @@ const CocktailList = ({ drinks }) => {
   });
 
   return (
-    <div>
+    <Wrapper>
       {formattedDrinks.map((item) => {
         return <CocktailCard key={item.id} {...item} />;
       })}
-    </div>
+    </Wrapper>
   );
 };
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+`;
 export default CocktailList;
