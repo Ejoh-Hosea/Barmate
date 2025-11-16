@@ -1,11 +1,15 @@
-import { Form } from "react-router-dom";
-
+import axios from "axios";
+import { Form, redirect } from "react-router-dom";
+import { toast } from "react-toastify";
+const newsletterUrl = "https://my-api-dusky-beta.vercel.app/api/newsletter";
 export const action = async ({ request }) => {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
-  console.log(data);
+  const response = await axios.post(newsletterUrl, data);
+  console.log(response);
+  toast.success(response.data.msg);
 
-  return null;
+  return redirect("/");
 };
 
 const Newsletter = () => {
