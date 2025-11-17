@@ -51,10 +51,10 @@ const Wrapper = styled.nav`
     letter-spacing: 2px;
   }
   .nav-link:hover {
-    color: #1d4ed8;
+    color: var(--nav-hover);
   }
   .active {
-    color: #1d4ed8;
+    color: var(--nav-hover);
   }
   @media (min-width: 768px) {
     .nav-center {

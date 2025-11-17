@@ -13,8 +13,8 @@ const About = () => {
       </p>
       <p>
         Our mission is simple: make mixology accessible, fun, and interactive.
-        No need for complicated manuals or fancy ingredients — Barmate brings
-        the creativity to your fingertips. Explore new flavors, learn the art of
+        No need for complicated manuals or fancy ingredients. Barmate brings the
+        creativity to your fingertips. Explore new flavors, learn the art of
         garnishing, and impress your friends with drinks they’ll remember.
       </p>
 
@@ -27,7 +27,7 @@ const About = () => {
       </p>
 
       <p>
-        Safety and enjoyment go hand in hand — that’s why we include both
+        Safety and enjoyment go hand in hand - that’s why we include both
         alcoholic and non-alcoholic options. Mix, match, and modify to suit your
         mood, occasion, or audience. Barmate is here to inspire creativity
         without compromise.
