@@ -6,8 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ToastContainer position="top-center" autoClose={2000}>
-      <App />
-    </ToastContainer>
+    <ToastContainer position="top-center" autoClose={2000} />
+    <App />
   </StrictMode>
 );

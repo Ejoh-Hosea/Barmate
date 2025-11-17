@@ -8,7 +8,7 @@ import Error from "./pages/Error";
 import SinglePageError from "./pages/SinglePageError";
 import { loader as landingLoader } from "./pages/Landing";
 import { action as newsletterAction } from "./pages/Newsletter";
-
+import { loader as singleCocktailLoader } from "./pages/Cocktail";
 const router = createBrowserRouter([
   {
     path: "/",
